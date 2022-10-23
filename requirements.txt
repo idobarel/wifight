@@ -1,0 +1,5 @@
+psutil
+argparse
+termcolor
+scapy
+pandas
