@@ -19,10 +19,8 @@ the command are (might changed): <br>
 ##### args:
 iface       Specify the wireless interface you wish to use<br>
 ##### flags:
-IFACE
 -h, --help                  show the help message and exit<br>
--i IFACE, --iface IFACE     Specify the wireless interface you wish to use<br>
--t TARGET, --target TARGET
+-t TARGET, --target TARGET<br>
                             Specify the target device MAC<br>
 -b BSSID, --bssid BSSID
                             Specify the target network MAC<br>
