@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-from lib.all import *
+from wifight.handler import *
+from wifight.deauther import Deauther
+from wifight.errors import ExitCodes
+from wifight.scanner import Scanner
+from wifight.cracker import Cracker
 
 def main()->int:
     args = getArgs()
@@ -29,3 +33,5 @@ def main()->int:
     
 if __name__ == '__main__':
     exit(main())
+else:
+    print("["+colored("-", "red")+"] wifight does not ment to be used like this, unexpected errors may accure")
