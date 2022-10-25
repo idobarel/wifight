@@ -8,7 +8,7 @@ written in python3, WIFIGHT will let you crack a WPA wifi network.
 ```bash
 git clone https://github.com/idobarel/wifight.git #clone the repo
 cd wifight # navigate into the directory
-chmod +x wifight # give execute permissions
+./installer.sh # give execute permissions
 ./wifight -h # run the app!
 ```
 ## Command syntax:
