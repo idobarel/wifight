@@ -33,5 +33,3 @@ def main()->int:
     
 if __name__ == '__main__':
     exit(main())
-else:
-    print("["+colored("-", "red")+"] wifight does not ment to be used like this, unexpected errors may accure")
