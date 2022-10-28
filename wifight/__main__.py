@@ -30,7 +30,8 @@ def main()->int:
         case "crack":
             Cracker(args.parse_args().__dict__)
         case "wjam":
-            Wjam(args.parse_args().__dict__)
+            w = Wjam(args.parse_args().__dict__)
+            w.start()
         case _:    
             return ExitCodes.ARGS_ERROR
     
