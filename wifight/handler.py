@@ -28,6 +28,9 @@ def getArgs():
     crack_parser.add_argument("pcapFile", type=str, default="", help="Specify the captured packets file.")
     crack_parser.add_argument("-t", "--target", required=False, default="", type=str, help="Specify the target network ESSID (name) you want to attack (make sure you have a 4 way handshake of it).")
     crack_parser.add_argument("-w", "--wordlist", required=True, type=str, help="Specify the wordlist you wish to use.")
+    wjam_parser = subparsers.add_parser("wjam", help="Deauth all nearby clients from their networks")
+    wjam_parser.add_argument("iface", type=str, help="Specify the interface you wish to use for the attack")
+    wjam_parser.add_argument("-c", "--channel", type=int, default=-1, help="Specify the channel you wish to use.")
     parser.parse_args()
     return parser
 

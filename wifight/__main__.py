@@ -4,6 +4,7 @@ from wifight.deauther import Deauther
 from wifight.errors import ExitCodes
 from wifight.scanner import Scanner
 from wifight.cracker import Cracker
+from wifight.wjam import Wjam
 
 def main()->int:
     args = getArgs()
@@ -28,6 +29,8 @@ def main()->int:
             setToManagedMode(args.parse_args().iface)
         case "crack":
             Cracker(args.parse_args().__dict__)
+        case "wjam":
+            Wjam(args.parse_args().__dict__)
         case _:    
             return ExitCodes.ARGS_ERROR
     

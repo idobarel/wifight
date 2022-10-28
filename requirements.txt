@@ -1,4 +1,3 @@
-psutil
 argparse
 termcolor
 scapy

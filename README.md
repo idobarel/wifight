@@ -54,6 +54,13 @@ pcapFile              Specify the captured packets file.<br>
 -h, --help                          show the help message and exit<br>
 -t TARGET, --target TARGET          Specify the target network ESSID (name) you want to attack (make sure you have a 4 way handshake of it).<br>
 -w WORDLIST, --wordlist WORDLIST    Specify the wordlist you wish to use.<br>
+### wjam:
+#### Deauth all nearby clients from their networks.
+##### args:
+iface       Specify the wireless interface you wish to use<br>
+##### flags:
+-h, --help                      show the help message and exit<br>
+-c CHANNEL, --channel CHANNEL   Specify the channel you want to use, channel hooping is enabled by default.<br>
 
 # Notice
 I do not promote any illigal actions, please do not use this script for malicuse activities!
