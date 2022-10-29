@@ -53,6 +53,8 @@ class Scanner():
             if packet.type in [1, 2]:
                 doesExistsCD = False
                 cd = ClientData(packet.addr1, str(packet.addr2), self.channel)
+                if cd.ap_addr == "00:00:00:00:00:00":
+                    return
                 if self.essid != "":
                     if cd.ap_addr == "None":
                         return
